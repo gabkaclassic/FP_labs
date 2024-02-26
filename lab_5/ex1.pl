@@ -12,7 +12,6 @@ term_type(Term, Type) :-
     Type = compound_term.
 term_type(_, not_a_term).
 
-% Примеры использования
 main :-
     term_type(_, Type1),
     writeln('Переменная:'), writeln(Type1),
