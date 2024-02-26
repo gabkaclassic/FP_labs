@@ -2,7 +2,7 @@
  [
   {description, "Example OTP application"},
   {vsn, "1.0"},
-  {modules, []},
+  {modules, [ex4_ring_sup, ex4_ring]},
   {registered, []},
   {applications, [kernel, stdlib]},
   {mod, {ex4_app, []}}

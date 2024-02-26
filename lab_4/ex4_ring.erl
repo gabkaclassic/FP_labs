@@ -32,7 +32,3 @@ process() ->
             io:format("~p received stop~n", [self()])
     end.
 
-% c(ex4_app).
-% c(ex4_ring).
-% c(ex4_ring_sup).
-% application:start(ex4_app).
