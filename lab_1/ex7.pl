@@ -33,7 +33,7 @@ is_date(Day, Month, Year, DayOfWeek) :-
     day_of_week(Year, Month, Day, DayOfWeek).
 
 main :-
-    is_date(1, 2, 2013, DayOfWeek),
+    is_date(26, 2, 2024, DayOfWeek),
     writeln(DayOfWeek).
 
 
