@@ -44,3 +44,5 @@ example() ->
     io:format("Less than ~p: ~p~n", [Element, TreeLT]),
     io:format("More than ~p: ~p~n", [Element, TreeGT]).
 
+% c(ex1).
+% ex1:example().
