@@ -1,15 +1,15 @@
-dropwhile(_, [], []) :- !.
-
+dropwhile(_, [], []).
 dropwhile(Pred, [X|Xs], Result) :-
-    call(Pred, X),
-    !,
+    call(Pred, X), 
+    !, 
     dropwhile(Pred, Xs, Result).
+dropwhile(Pred, List, List). 
 
-dropwhile(Pred, [X|Xs], [X|Xs]) :-
-    \+ call(Pred, X).
+pred(X) :-
+    X mod 2 =:= 0.
 
 main :-
-    dropwhile(>=(3), [1, 3, 9, 11, 6], Result),
+    dropwhile(pred, [2, 4, 9, 11, 6], Result),
     writeln(Result).
 
 :- initialization(main).

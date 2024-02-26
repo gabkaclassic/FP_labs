@@ -1,4 +1,4 @@
-fun(X, Value) :- Value is X*X - 2.
+fun(X, Value) :- Value is X*X - 3.
 
 check_sign(Value, Positive) :- Positive is sign(Value).
 
